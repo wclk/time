@@ -19,6 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/main.css'); ?>" />
 		<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/noscript.css'); ?>" />
 		<noscript><link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/noscript.css'); ?>" /></noscript>
+		<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/main.css'); ?>" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 	</head>
 	<body class="is-preload">
@@ -43,6 +44,7 @@
 				   </article>
 				  <?php endwhile; ?>
 				</div> 
+				
 				<!-- Footer -->
 					<footer id="footer" class="panel">
 						<div class="inner split">
