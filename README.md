@@ -27,7 +27,7 @@ demo：<a href="http://photo.zmki.cn/">photo.zmki.cn</a>
 
 <span style="font-size: 10pt;"><img class="alignnone size-full" src="https://a-oss.zmki.cn/2019/20191121-47ee9a7e539da.png" width="940" height="596" /></span>
 
-<span style="font-size: 10pt;"><img class="alignnone size-full" src="https://a-oss.zmki.cn/2019/20191122-3cf5bb78a752c.png" width="1902" height="926" /></span>
+<span style="font-size: 10pt;"><img class="alignnone size-full" src="https://a-oss.zmki.cn/2019/20191122-3cf5bb78a752c.png"  /></span>
 
 <span style="font-size: 10pt;"><img class="alignnone " src="https://a-oss.zmki.cn/2019/20191122-69abd21561715.png" width="801" height="981" /></span>
 <h3><span style="font-size: 10pt;">这个一个基于typecho的相册模板。前端采用Multiverse，由钻芒适配并优化</span></h3>
