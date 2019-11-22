@@ -3,7 +3,7 @@
  * 前端基于Multiverse，for TYPECHO 的相册模板，由钻芒开发适配  你可以在<a href="https://www.zmki.cn">钻芒博客</a>获得更多关于此模板的信息
  * @package Time
  * @author zmki
- * @version 1.0.1
+ * @version 1.0.2
  * @link https://www.zmki.cn/
  */
 ?>
