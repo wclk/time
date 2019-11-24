@@ -1,9 +1,9 @@
 <?php
 /**
- * 前端基于Multiverse，for TYPECHO 的相册模板，由钻芒开发适配  你可以在<a href="https://www.zmki.cn">钻芒博客</a>获得更多关于此模板的信息
+ * 前端基于Multiverse，for TYPECHO 的相册模板，由钻芒开发适配  <br/>你可以在<a href="https://www.zmki.cn">钻芒博客</a>获得更多关于此模板的信息<br/> 主题介绍:<a href="https://www.zmki.cn/4953.html">www.zmki.cn/4953.html</a><br/>图片优化方案<a href="https://www.zmki.cn/4956.html">www.zmki.cn/4956.html</a>
  * @package Time
  * @author zmki
- * @version 1.0.2
+ * @version 2.1.1
  * @link https://www.zmki.cn/
  */
 ?>
