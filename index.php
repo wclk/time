@@ -63,7 +63,7 @@
 						<li><a href="<?php $this->options->xxgithub()?> "  target="_blank" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
 										</ul>
 								</section>
-								/* 下边放置你的统计代码，样式如photo.zmki.cn */
+								/* 下边放置你的统计代码，样式效果如photo.zmki.cn */
 									<span style="color: #b5b5b5; font-size: 0.8em;">
 									<script type="text/javascript">var cnzz_protocol = (("https:" == document.location.protocol) ? "https://" : "http://");document.write(unescape("%3Cspan id='cnzz_stat_icon_1278234379'%3E%3C/span%3E%3Cscript src='" + cnzz_protocol + "s4.cnzz.com/z_stat.php%3Fid%3D1278234379%26online%3D1%26show%3Dline' type='text/javascript'%3E%3C/script%3E"));</script>
 								</span>
