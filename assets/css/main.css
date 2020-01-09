@@ -221,8 +221,8 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #34a58e;
+		/*border-bottom: dotted 1px;*/
+		color: #b5b5b5;
 		text-decoration: none;
 	}
 
@@ -2057,8 +2057,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer .copyright {
-		color: #505051;
-		font-size: 0.9em;
+	color: #b5b5b5;
+    font-size: 15px;
 	}
 
 		#footer .copyright a {
