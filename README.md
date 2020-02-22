@@ -1,16 +1,13 @@
 # 
 # timeFortypecho相册模板
-demo：<a href="http://photo.zmki.cn/">photo.zmki.cn</a>
 
-由钻芒博客发布
-<p><a href="https://www.zmki.cn" rel="nofollow">官网</a>  
-<a href="https://https://github.com/wclk/time" rel="nofollow">项目</a>  
-<a href="http://photo.zmki.cn/" rel="nofollow">演示</a>  
-<a href="https://tool.zmki.cn" rel="nofollow">导航</a>
-<a href="https://www.zmki.cn/4956.html" rel="nofollow">图片优化</a></p>
-<p><a href="https://github.com/wclk/time"><img src="https://camo.githubusercontent.com/9d2eb231f1fabe10b74bad6085abac7e0e83521e/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f6c6963656e73652d47504c5f56332e302d79656c6c6f77677265656e2e737667" alt="License" data-canonical-src="https://img.shields.io/badge/license-GPL_V3.0-yellowgreen.svg" style="max-width:100%;"></a>
-<a href="http://php.net" rel="nofollow"><img src="https://camo.githubusercontent.com/66365f9735c4fa81a68fbc70255a9fd3b6ced0f9/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f5048502d2533453d352e362d6f72616e67652e737667" alt="PHP" data-canonical-src="https://img.shields.io/badge/PHP-%3E=5.6-orange.svg" style="max-width:100%;"></a>
-</p> 
+由钻芒博客原创发布
+<p><a href="https://www.zmki.cn" rel="nofollow">官网</a>   
+<a href="https://https://github.com/wclk/time" rel="nofollow">项目</a>   
+<a href="http://photo.zmki.cn/" rel="nofollow">演示</a>   
+<a href="https://tool.zmki.cn" rel="nofollow">导航</a> 
+<a href="https://www.zmki.cn/4956.html" rel="nofollow">图片优化</a></p> 
+
 <span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">博主半个摄影控。一直想做个相册展示站，最近心血来潮。自用刚需项目。Time便应运而生。前端采用Multiverse，后台用的是typecho。瀑布流无限加载，支持图片灯箱效果。底栏顶栏已集成到<code>index.php</code>首页
 </span><span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;">For WordPress版本 计划开发适配中...（猴年马月）</span>
 <span style="font-family: tahoma, arial, helvetica, sans-serif; font-size: 10pt;"> 秉承开源精神，代码无加密，已打包至GitHub。</span>
@@ -18,6 +15,7 @@ demo：<a href="http://photo.zmki.cn/">photo.zmki.cn</a>
  	<li><span style="font-size: 10pt;"><span style="color: #333399;">GitHub：</span><a href="https://github.com/wclk/time" target="_blank" rel="noopener">github.com/wclk/time</a></span></li>
  	<li><span style="font-size: 10pt;"><span style="color: #333399;">Demo:</span> <a href="https://photo.zmki.cn/" target="_blank" rel="noopener">photo.zmki.cn</a></span></li>
  <li><span style="font-size: 10pt;"><span style="color: #333399;">优化图片占用:</span> <a href="https://www.zmki.cn/4956.html" target="_blank" rel="noopener">www.zmki.cn/4956.html</a></span></li>
+  <li><span style="font-size: 10pt;"><span style="color: #333399;">配合图片处理:</span> <a href="https://www.zmki.cn/5374.html" target="_blank" rel="noopener">www.zmki.cn/5374.html</a></span></li>
 </ul>
 <span style="font-size: 10pt; color: #000000;">截图:</span>
 <span style="font-size: 10pt;"><img class="alignnone size-full" src="https://a-oss.zmki.cn/2019/20191121-47ee9a7e539da.png" width="940" height="596" /></span>
