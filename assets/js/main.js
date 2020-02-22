@@ -218,18 +218,18 @@
 
 				// No image? Bail.
 					if ($image.length == 0)
-						return;
+						// return;
 
 				// Image.
 				// This sets the background of the "image" <span> to the image pointed to by its child
 				// <img> (which is then hidden). Gives us way more flexibility.
 
 					// Set background.
-						$image.css('background-image', 'url(' + $image_img.attr('src') + ')');
+						// $image.css('background-image', 'url(' + $image_img.attr('src') + ')');
 
 					// Set background position.
-						if (x = $image_img.data('position'))
-							$image.css('background-position', x);
+						// if (x = $image_img.data('position'))
+						// 	$image.css('background-position', x);
 
 					// Hide original img.
 						$image_img.hide();
@@ -279,3 +279,45 @@
 				});
 
 })(jQuery);
+
+
+//控制全屏
+function enterfullscreen() { //进入全屏
+    $("#fullscreen").html("退出全屏");
+    var docElm = document.documentElement;
+    //W3C
+    if(docElm.requestFullscreen) {
+        docElm.requestFullscreen();
+    }
+    //FireFox
+    else if(docElm.mozRequestFullScreen) {
+        docElm.mozRequestFullScreen();
+    }
+    //Chrome等
+    else if(docElm.webkitRequestFullScreen) {
+        docElm.webkitRequestFullScreen();
+    }
+    //IE11
+    else if(elem.msRequestFullscreen) {
+        elem.msRequestFullscreen();
+    }
+}
+
+function exitfullscreen() { //退出全屏
+    $("#fullscreen").html('<svg  class="icon-zmki zmki_dh" aria-hidden="true"><use xlink:href="#icon-zmki-ziyuan-copy"></use></svg>');
+    if(document.exitFullscreen) {
+        document.exitFullscreen();
+    } else if(document.mozCancelFullScreen) {
+        document.mozCancelFullScreen();
+    } else if(document.webkitCancelFullScreen) {
+        document.webkitCancelFullScreen();
+    } else if(document.msExitFullscreen) {
+        document.msExitFullscreen();
+    }
+}
+
+var a = 0;
+$('#fullscreen').on('click', function() {
+    a++;
+    a % 2 == 1 ? enterfullscreen() : exitfullscreen();
+})
