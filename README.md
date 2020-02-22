@@ -25,6 +25,8 @@
 <ul>
  	<li><span style="font-size: 10pt;"><strong>使用前需前往typecho后台，设置-阅读，调整每页文章显示替换为</strong> 999</span></li>
  	<li><span style="font-size: 10pt;">首页只会输出5篇文章。需调整大一些，即可实现无限滚动</span></li>
+ <li><span style="font-size: 10pt;">#当图片少于6张时点击预览底部弹窗会有错位移动，请多上传几张图片即会正常。</span></li>
+ 
 </ul>
 <span style="font-size: 10pt;"><a href="https://a-oss.zmki.cn/2019/20191122-3b6d4a8d7ff1a.png"><img class="alignnone size-full" src="https://a-oss.zmki.cn/2019/20191122-3b6d4a8d7ff1a.png-img"  /></a></span>
 <h3><span style="font-size: 10pt;">图片添加方式：</span></h3>
