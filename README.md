@@ -15,6 +15,7 @@
  	<li><span style="font-size: 10pt;"><span style="color: #333399;">zmki交流群：</span><a href="https://jq.qq.com/?_wv=1027&amp;k=5CmpFtQ" target="_blank" rel="noopener">737656800</a></span></li>
  	<li><span style="font-size: 10pt;"><span style="color: #333399;">GitHub：</span><a href="https://github.com/wclk/time" target="_blank" rel="noopener">github.com/wclk/time</a></span></li>
  	<li><span style="font-size: 10pt;"><span style="color: #333399;">Demo:</span> <a href="https://photo.zmki.cn/" target="_blank" rel="noopener">photo.zmki.cn</a></span></li>
+ <li><span style="font-size: 10pt;"><span style="color: #333399;">博客发布地址:</span> <a href="https://www.zmki.cn/4953.html" target="_blank" rel="noopener">www.zmki.cn/4953.html</a></span></li>
  <li><span style="font-size: 10pt;"><span style="color: #333399;">优化图片占用:</span> <a href="https://www.zmki.cn/4956.html" target="_blank" rel="noopener">www.zmki.cn/4956.html</a></span></li>
   <li><span style="font-size: 10pt;"><span style="color: #333399;">配合图片处理:</span> <a href="https://www.zmki.cn/5374.html" target="_blank" rel="noopener">www.zmki.cn/5374.html</a></span></li>
 </ul>
