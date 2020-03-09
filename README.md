@@ -1,10 +1,14 @@
 # 
 ＃timeFortypecho相册模板
-！2020年3月9日09:32:58紧急更新
+<h3><strong><span style="color: #000080;">！2020年3月9日09:32:58紧急更新</span></strong></h3>
 部分同学反应下载来使用有问题，经简单排除为GitHub里上传的可能有问题。待有时间在重新上传吧。
+
 大家先用到这里下载，这里的版本没有问题！
-Time下载仓库:   https://pan.zmki.cn/s/97s71ors
-如果你喜欢Time，请为我点一颗Star 你的支持就是我的动力。
+<ul>
+ 	<li><strong><span style="color: #000080;">Time下载仓库</span></strong>: https://pan.zmki.cn/s/97s71ors</li>
+</ul>
+<span style="color: #000080;">如果你喜欢Time，请为我点一颗Star 你的支持就是我的动力。</span>
+
 由钻芒博客原创发布
 <p><a href="https://www.zmki.cn" rel="nofollow">官网</a>   
 <a href="https://https://github.com/wclk/time" rel="nofollow">项目</a>   
