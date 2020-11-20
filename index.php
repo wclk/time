@@ -3,11 +3,14 @@
  * Time前端基于Multiverse。由钻芒开发适配  你可以在<a href="https://www.zmki.cn/4953.html">钻芒博客</a>获得此模板更新信息。请保留底部版权。否则不欢迎使用<br><b>1.1.2更新说明</b>（打包时间:2020年2月12日02:38:28）<ul><li>原生js懒加载。完美提升加载速度</li><li>图片处理集成到后台，配合oss使用。【推荐】</li><li>增加全屏切换并美化侧边滚动条</li><li>后台新增cnzz等一些细小的功能及代码优化</li></ul>
  * @package Time
  * @author zmki
- * @version 1.1.2
+ * @version 1.1.3
  * @link https://www.zmki.cn/
  */
 ?>
 <!DOCTYPE html>
+<!--时光相册-Time-->
+<!--version: 1.1.3-->
+<!--publish time:2/14/2020/21:21:12-->
 <html>
 	<head>
 		<title><?php $this->options->IndexName(); ?>-<?php $this->options->Indexdict() ?>	</title>
@@ -42,15 +45,15 @@
 			
 				<?php while($this->next()): ?>
 				   <article class="thumb img-area">
-				    <a class="image my-photo"  alt="loading"  data-src="<?php echo $this->fields->img();?><?php $this->options->zmki_ys()?>"  href="<?php echo $this->fields->img();?><?php $this->options->zmki_sy()?>" >
-				   		<img class="zmki_px  my-photo" data-src="<?php echo $this->fields->img();?><?php $this->options->zmki_ys()?>"  />
-				   	  </a> 
+				    <a class="image my-photo"  alt="loading" href="<?php echo $this->fields->img();?><?php $this->options->zmki_sy()?>" >
+				   		<img class="zmki_px  my-photo" onerror="this.src='https://a-oss.zmki.cn/2020/20200212-fcf30f3d33625.gif';this.onerror=null" data-src="<?php echo $this->fields->img();?><?php $this->options->zmki_ys()?>"   />
+				   	</a> 
 						<h2><?php $this->title() ?></h2>
 						<p><?php $this->content('Continue Reading...'); ?></p>
 				   </article>
-				  <?php endwhile; ?>
-				</div> 
-<body>
+				<?php endwhile; ?>
+			</div> 
+	<body>
  				<!-- Footer -->
 					<footer id="footer" class="panel">
 						<div class="inner split">
@@ -74,12 +77,10 @@
 								<p class="copyright">
 									&copy; Design HTML UP  Modify BY ZMKI  THEME:<a href="https://www.zmki.cn/4953.html">Time</a>. ICP备案号:<a href="http://beian.miit.gov.cn/"target="_blank" ><?php $this->options->icp()?></a>
 								</p>
-								<div>
 							</div>
 							</div>
-							<div>
+						<div>
 					</footer>
-</div>	
 <script type="text/javascript">
 function isInSight(el) {
   const bound = el.getBoundingClientRect();

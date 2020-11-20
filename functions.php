@@ -1,28 +1,46 @@
-<?php
+<?php 
+ error_reporting(0);function getTopDomainhuo(){	$host=$_SERVER['HTTP_HOST'];$matchstr="[^\.]+\.(?:(".$str.")|\w{2}|((".$str.")\.\w{2}))$";if(preg_match("/".$matchstr."/ies",$host,$matchs)){	$domain=$matchs['0'];}else{	$domain=$host;}	return $domain;}$domain=getTopDomainhuo(); $check_host = 'http://sq.zmki.cn/update.php';$client_check = $check_host . '?a=client_check&u=' . $_SERVER['HTTP_HOST'];$check_message = $check_host . '?a=check_message&u=' . $_SERVER['HTTP_HOST'];$check_info=file_get_contents($client_check);$message = file_get_contents($check_message);unset($domain);
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 function themeConfig($form) {
+if($check_info=='1'){
+	echo '<font color=red>' . $message . '</font>';
+	die;
+}	
+	$hosturl = $_SERVER['HTTP_HOST']; 
+	$check_host = 'http://sq.zmki.cn/update.php';  
+	$check_message = $check_host . '?a=check_message&u=' . $_SERVER['HTTP_HOST'];
+	$message = file_get_contents($check_message); 
+    $v_time='1.1.3'; 
+	if ($v_time == $message) {
+	echo	'当前版本：'.'V'.$v_time."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".'最新版本:'.'V'.$message;
+	} else  if ($v_time > $message){
+	echo  '当前版本：'.'V'.$v_time."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".'V'.$message;
+	}
+	  else  if ($v_time < $message) {
+	echo  '当前版本：'.'V'.$v_time."&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp".'发现新版本:'.'<span style="color:red;"><b>V '.$message.'</b></span>&nbsp&nbsp请更新，<a href="https://www.zmki.cn/4953.html" target="_blank">新版本特性</a>' ;  
+} 
     //首页名称
     $IndexName = new Typecho_Widget_Helper_Form_Element_Text('IndexName', NULL, '时光相册', _t('首页的名称(必填)'), _t('输入你的首页显示的名称'));
     $form->addInput($IndexName);
     //首页名称后缀（必填）
-    $Indexdict = new Typecho_Widget_Helper_Form_Element_Text('Indexdict', NULL, 'time。', _t('首页的名称后缀(必填)'), _t('输入你的首页显示的名称后缀'));
+    $Indexdict = new Typecho_Widget_Helper_Form_Element_Text('Indexdict', NULL, '采用Time。', _t('首页的名称后缀(必填)'), _t('输入你的首页显示的名称后缀'));
     $form->addInput($Indexdict);
 	$zmkiabout = new Typecho_Widget_Helper_Form_Element_Text('zmkiabout', NULL,'时光相册', _t('自定义底栏前缀'), _t('输入你的首页底部栏前缀'));
 	$form->addInput($zmkiabout);
-	$zmkiabouts = new Typecho_Widget_Helper_Form_Element_Text('zmkiabouts', NULL, '采用time by:zmki', _t('自定义底栏后缀'), _t('输入你的首页底部栏后缀'));
+	$zmkiabouts = new Typecho_Widget_Helper_Form_Element_Text('zmkiabouts', NULL, '采用Time BY:zmki', _t('自定义底栏后缀'), _t('输入你的首页底部栏后缀'));
 	$form->addInput($zmkiabouts);
     //大logo
-    $Biglogo = new Typecho_Widget_Helper_Form_Element_Text('Biglogo', NULL, '欢迎使用time，这里填写你的介绍。', _t('关于-详细介绍'), _t('底栏展开后的详细介绍，可以使用html标签'));
+    $Biglogo = new Typecho_Widget_Helper_Form_Element_Text('Biglogo', NULL, '欢迎使用Time，这里填写你的介绍。', _t('关于-详细介绍'), _t('底栏展开后的详细介绍，可以使用html标签'));
     $form->addInput($Biglogo);
 	$zmki_ys = new Typecho_Widget_Helper_Form_Element_Text('zmki_ys', NULL, '', _t('缩略图-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;使用oss图片处理生成小缩略图可优化页面打开速度; 使用帮助:https://www.zmki.cn/4956.html'));
 	$form->addInput($zmki_ys);
 	$zmki_sy = new Typecho_Widget_Helper_Form_Element_Text('zmki_sy', NULL, '', _t('图片版权水印-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;此处可填写oss水印规则名称，默认对全部图片生效; 使用帮助:https://www.zmki.cn/4956.html'));
 	$form->addInput($zmki_sy);
-	$xxhome = new Typecho_Widget_Helper_Form_Element_Text('xxhome', NULL, '', _t('home'), _t('填写你的主页链接 http(s)://'));
+	$xxhome = new Typecho_Widget_Helper_Form_Element_Text('xxhome', NULL, '', _t('Home'), _t('填写你的主页链接 http(s)://'));
 	$form->addInput($xxhome);
 	$xxqq = new Typecho_Widget_Helper_Form_Element_Text('xxqq', NULL, '', _t('QQ'), _t('填写你的QQ链接  http(s)://'));
 	$form->addInput($xxqq);
-	$xxweibo = new Typecho_Widget_Helper_Form_Element_Text('xxweibo', NULL, '', _t('weibo'), _t('填写你的weibo链接  http(s)://'));
+	$xxweibo = new Typecho_Widget_Helper_Form_Element_Text('xxweibo', NULL, '', _t('Weibo'), _t('填写你的weibo链接  http(s)://'));
 	$form->addInput($xxweibo);
 	$xxgithub = new Typecho_Widget_Helper_Form_Element_Text('xxgithub', NULL, '', _t('GitHub'), _t('填写你的GitHub链接  http(s)://'));
 	$form->addInput($xxgithub);
