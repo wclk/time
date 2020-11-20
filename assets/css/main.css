@@ -13,9 +13,75 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 	
 */
+::-webkit-scrollbar {/*滚动条整体样式*/
+width: 5px; /*高宽分别对应横竖滚动条的尺寸*/
+/*height: 5px;*/
+}
+::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+background-color: #ececec;
+/*background-image: -webkit-linear-gradient(45deg, rgba(255, 93, 143, 1) 25%, transparent 25%, transparent 50%, rgba(255, 93, 143, 1) 50%, rgba(255, 93, 143, 1) 75%, transparent 75%, transparent);*/
+}
+::-webkit-scrollbar-track {/*滚动条里面轨道*/
+-webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+background: #1f2224;
+}
+
+@font-face {
+  font-family: 'iconfont';  /* project id 1635479 */
+  src: url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.eot');
+  src: url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.woff') format('woff'),
+  url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_1635479_m8o2ir6mitf.svg#iconfont') format('svg');
+}
+.icon-zmki {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+.zmki_px{
+	 border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    outline: 0px;
+    background-image: url(https://a-oss.zmki.cn/2020/20200212-fcf30f3d33625.gif);
+	background-size: 100% 100%;
+}
+@media screen and (max-width: 1221px) {.zmki_wap{display:none; }
+}
+/*手机端适配  常规尺寸*/
+@media (max-width:768px) {
+.zmki_px{
+	background-image: url(https://a-oss.zmki.cn/2020/20200212-6dafa53ecf4e3.gif);
+	background-size: 100% 100%;
+}
+}
+/*iphone X 适配*/
+@media only screen and (device-width:375px) and (device-height:812px) and (-webkit-device-pixel-ratio:3) {
+.zmki_px{
+	background-image: url(https://a-oss.zmki.cn/2020/20200212-38ce26bb0bd0d.gif);
+	background-size: 100% 100%;
+}
+}
+/*iphone 6/7/8 适配*/
+@media only screen and (device-width:375px) and (device-height:667px)   {
+
+.zmki_px{
+	background-image: url(https://a-oss.zmki.cn/2020/20200212-e056a5f2914d6.gif);
+	background-size: 100% 100%;
+}
+}
 .zm{
 	background-color: red;
 }
+
 @-moz-keyframes spinner {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -47,7 +113,6 @@
 		transform: rotate(359deg);
 	}
 }
-
 @-ms-keyframes spinner {
 	0% {
 		-moz-transform: rotate(0deg);
@@ -221,8 +286,8 @@ input, select, textarea {
 		-webkit-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		-ms-transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
 		transition: color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-		border-bottom: dotted 1px;
-		color: #34a58e;
+		/*border-bottom: dotted 1px;*/
+		color: #b5b5b5;
 		text-decoration: none;
 	}
 
@@ -2057,8 +2122,8 @@ input, select, textarea {
 /* Footer */
 
 	#footer .copyright {
-		color: #505051;
-		font-size: 0.9em;
+	color: #b5b5b5;
+    font-size: 15px;
 	}
 
 		#footer .copyright a {

@@ -12,9 +12,12 @@ function themeConfig($form) {
 	$zmkiabouts = new Typecho_Widget_Helper_Form_Element_Text('zmkiabouts', NULL, '采用time by:zmki', _t('自定义底栏后缀'), _t('输入你的首页底部栏后缀'));
 	$form->addInput($zmkiabouts);
     //大logo
-    $Biglogo = new Typecho_Widget_Helper_Form_Element_Text('Biglogo', NULL, '欢迎使用time，这里填写你的介绍。', _t('关于-详细介绍'), _t('底栏展开后的详细介绍，可以使用<br>换行'));
+    $Biglogo = new Typecho_Widget_Helper_Form_Element_Text('Biglogo', NULL, '欢迎使用time，这里填写你的介绍。', _t('关于-详细介绍'), _t('底栏展开后的详细介绍，可以使用html标签'));
     $form->addInput($Biglogo);
-	
+	$zmki_ys = new Typecho_Widget_Helper_Form_Element_Text('zmki_ys', NULL, '', _t('缩略图-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;使用oss图片处理生成小缩略图可优化页面打开速度; 使用帮助:https://www.zmki.cn/4956.html'));
+	$form->addInput($zmki_ys);
+	$zmki_sy = new Typecho_Widget_Helper_Form_Element_Text('zmki_sy', NULL, '', _t('图片版权水印-图片处理规则名称-(优化选项,选填)'), _t('需要带自定义分隔符;此处可填写oss水印规则名称，默认对全部图片生效; 使用帮助:https://www.zmki.cn/4956.html'));
+	$form->addInput($zmki_sy);
 	$xxhome = new Typecho_Widget_Helper_Form_Element_Text('xxhome', NULL, '', _t('home'), _t('填写你的主页链接 http(s)://'));
 	$form->addInput($xxhome);
 	$xxqq = new Typecho_Widget_Helper_Form_Element_Text('xxqq', NULL, '', _t('QQ'), _t('填写你的QQ链接  http(s)://'));
@@ -25,7 +28,8 @@ function themeConfig($form) {
 	$form->addInput($xxgithub);
 	$icp = new Typecho_Widget_Helper_Form_Element_Text('icp', NULL, '', _t('ICP备案号'), _t('如果你在国内有备案，可在此处填写'));
 	$form->addInput($icp);
-
+	$cnzz= new Typecho_Widget_Helper_Form_Element_Text('cnzz', NULL, '', _t('统计代码'), _t('cnzz或百度..统计代码。可在此处填写处'));
+	$form->addInput($cnzz);
 }
 //输出导航
 function themeFields($layout) {
