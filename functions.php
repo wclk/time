@@ -26,24 +26,6 @@ function themeConfig($form) {
 	$icp = new Typecho_Widget_Helper_Form_Element_Text('icp', NULL, '', _t('ICP备案号'), _t('如果你在国内有备案，可在此处填写'));
 	$form->addInput($icp);
 
-
-    $isSearch = new Typecho_Widget_Helper_Form_Element_Radio('isSearch',
-        array(
-            '0' => _t('禁用'),
-            '1' => _t('启用')
-        ),
-        '1',_t('搜索功能'),_t("是否启用搜索")
-    ); 
-    $form->addInput($isSearch);
-
-    $isLink = new Typecho_Widget_Helper_Form_Element_Radio('isLink',
-        array(
-            '0' => _t('禁用'),
-            '1' => _t('启用')
-        ),
-        '1',_t('跳转功能'),_t("是否启用直接跳转")
-    );    
-    $form->addInput($isLink);
 }
 //输出导航
 function themeFields($layout) {

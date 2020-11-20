@@ -3,7 +3,7 @@
  * 前端基于Multiverse，for TYPECHO 的相册模板，由钻芒开发适配  你可以在<a href="https://www.zmki.cn">钻芒博客</a>获得更多关于此模板的信息
  * @package Time
  * @author zmki
- * @version 1.0.1
+ * @version 1.0.2
  * @link https://www.zmki.cn/
  */
 ?>
@@ -19,6 +19,7 @@
 		<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/main.css'); ?>" />
 		<link rel="stylesheet" type="text/css" href="<?php $this->options->themeUrl('assets/css/noscript.css'); ?>" />
 		<noscript><link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/noscript.css'); ?>" /></noscript>
+		<link rel="stylesheet" href="<?php $this->options->themeUrl('assets/css/main.css'); ?>" />
 		<link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.css">
 	</head>
 	<body class="is-preload">
@@ -43,6 +44,7 @@
 				   </article>
 				  <?php endwhile; ?>
 				</div> 
+				
 				<!-- Footer -->
 					<footer id="footer" class="panel">
 						<div class="inner split">
