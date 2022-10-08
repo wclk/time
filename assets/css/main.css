@@ -1467,18 +1467,12 @@ input, select, textarea {
 				background: rgba(36, 38, 41, 0.8);
 			}
 
-		body.modal-active #wrapper {
-			-moz-filter: blur(8px);
-			-webkit-filter: blur(8px);
-			-ms-filter: blur(8px);
-			filter: blur(8px);
-		}
-
 			body.modal-active #wrapper:after {
 				pointer-events: auto;
 				opacity: 1;
 				visibility: visible;
 				z-index: 10003;
+        backdrop-filter: saturate(180%) blur(20px);
 			}
 
 		#wrapper:before {
@@ -1542,8 +1536,9 @@ input, select, textarea {
 		-moz-user-select: none;
 		-ms-user-select: none;
 		-webkit-user-select: none;
-		background: #1f2224;
-		bottom: -1em;
+		background: rgba(18, 18, 18, 0.8);
+    backdrop-filter: saturate(180%) blur(20px);
+		top: calc(100vh - 4em);
 		height: 5em;
 		left: 0;
 		line-height: 4em;
@@ -1563,17 +1558,19 @@ input, select, textarea {
 
 		#header h1 {
 			color: #a0a0a1;
-			display: inline-block;
+			display: flex;
 			font-size: 1em;
 			line-height: 4.5em;
 			height: 4em;
 			margin: 0;
 			vertical-align: middle;
+      align-items: center;
 		}
 
 			#header h1 a {
 				border: 0;
 				color: inherit;
+        line-height: 1;
 			}
 
 				#header h1 a:hover {
@@ -1760,17 +1757,11 @@ input, select, textarea {
 				background: rgba(36, 38, 41, 0.55);
 			}
 
-		body.content-active #main {
-			-moz-filter: blur(6px);
-			-webkit-filter: blur(6px);
-			-ms-filter: blur(6px);
-			filter: blur(6px);
-		}
-
 			body.content-active #main:after {
 				pointer-events: auto;
 				opacity: 1;
 				visibility: visible;
+        backdrop-filter: saturate(180%) blur(20px);
 			}
 
 		body.is-preload #main .thumb {
